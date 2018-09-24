@@ -1,0 +1,7 @@
+1. 官网下载地址为：http://www.jetbrains.com/idea/   java web : ultimate
+2. 服务器激活步骤
+ （1）添加可执行权限  chmod +x IntelliJIDEALicenseServer_darwin_amd64
+ （2）设置后台运行  screen -dmS IntelliJIDEALicenseServer_darwin_amd64 -d       -m
+ （3）运行该文件  sudo ./IntelliJIDEALicenseServer_darwin_amd64
+ （4）选择注册码，activate激活
+3.jdk 卸载路径  sudo rm -rf /Library/Java/JavaVirtualMachines/ jdk目录
