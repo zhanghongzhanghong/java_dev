@@ -49,6 +49,21 @@
 30.find 路径 表达式  —查找文件，find /etc -name fs*  
 31.grep -n 字符串 文件列表 —查找包含字符串的文件
 32.tar -czf 归档文件  归档目录 —压缩文件
-32.tar -xzf 归档文件  —解压文件
+33.tar -xzf 归档文件  —解压文件
+34.zip 压缩文件  文件列表 —压缩为zip 文件
+35.unzip -d 目录 压缩文件 —将压缩文件解压到指定目录
+36.ps -ef | grep tomcat —查看tomcat进程号
+37.kill -9 进程号
+38.linux 下ftp服务器的安装
+  1）yum install -y vsftpd
+  2) vi /etc/vsftpd/vsftpd.conf , chroot_local_user=YES去掉注释(不可以切换到主目录以外的其他目录)，allow_writeable_chroot=YES添加
+  3）/bin/systemctl start vsftpd.service  chkconfig vsftpd on
+  4）systemctl disable firewalld.service
+  5) useradd 用户名  passwd 密码    usermod -s /sbin/nologin 用户名
+  6)mkdir -p 目录  chmod a-w /data && chmod 777 -R  /data/myftp   user mod -d /data myftp
+  7)sestatus -b | grep ftp      setsebool -P tftp_home_dir on
+  8）service vsftpd restart
+
+
 
 
