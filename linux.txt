@@ -17,7 +17,7 @@
 15. init 3/5   —gnome与命令行的切换,修改/etc/inittab文件id:后面的数字
 16.useradd 用户名  —新建用户  ， userdel -r 用户名   —删除用户 ,useradd -g 组群 用户名 —
 17.passwd 用户名  —新建口令 , passwd -d 用户名  —删除口令 ,  passwd  —登录后修改口令
-     usermod -l  旧用户名 新用户名  —修改用户名，usrmod -d  路径  用户名 —指定用户的主目录
+     usermod -l  旧用户名 新用户名  —修改用户名，usermod -d  路径  用户名 —指定用户的主目录
 18.su  用户名 —切换用户，su -切换超级用户，exit退回普通用户
 19. id 用户名 —查看用户信息，groupadd 组群名 —新建组群，groupdel 组群名 —删除组群
 20.newusers < 文件名 —系统会根据文件中新建用户账号    
@@ -28,7 +28,7 @@
     /etc  —存放系统配置文件
     /home —普通用户的个人主目录
     /lib  —包含二进制文件所需的共享库
-    /media —移动存储介质的挂在点
+    /media —移动存储介质的挂载点
     /mnt —临时性挂载文件系统
     /proc  —存放系统有关进程的运行信息
     /root —超级用户的主目录
@@ -60,7 +60,7 @@
   3）/bin/systemctl start vsftpd.service  chkconfig vsftpd on
   4）systemctl disable firewalld.service
   5) useradd 用户名  passwd 密码    usermod -s /sbin/nologin 用户名
-  6)mkdir -p 目录  chmod a-w /data && chmod 777 -R  /data/myftp   user mod -d /data myftp
+  6)mkdir -p 目录  chmod a-w /data && chmod 777 -R  /data/myftp   usermod -d /data myftp
   7)sestatus -b | grep ftp      setsebool -P tftp_home_dir on
   8）service vsftpd restart
 
