@@ -1,5 +1,50 @@
+一、软件安装与配置
 1. 官网下载地址为：http://www.jetbrains.com/idea/   java web : ultimate
 2. 服务器激活步骤
    1.获取注册码 http://idea.lanyus.com/
    2.选择注册码，activate激活
 3.jdk 卸载路径  sudo rm -rf /Library/Java/JavaVirtualMachines/ jdk目录
+  jdk 安装后配合环境变量  vim ~/.bash_profile
+                      添加 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+                      保存文件 source .bash_profile
+二、IntelliJ IDEA配置
+1.jdk 配置 file->Project Structure
+2.常用快捷键  
+  搜索类：command + o 
+  查看源码：command + 左键
+  浮动显示的当前的文件结构：command + f12
+  代码提示快捷键:ctrl + /
+  command + N:新建类
+  command + L:按行查找
+  command + shift + R:查找文件
+  command + ,:Intellij IDEA 打开preference窗口
+  command + shift + f11:run方式运行
+  command + f11:debug方式运行
+  f6:step over:一步步执行
+  f5:step into:跳到自定义方法内
+  f7:step over:跳出自定义方法
+  drop frame:回退到进入自定义方法之前
+  alt + 左键:查看选中表达式的值
+  f8:跳到一个断点
+  Evaluate Expression:command + U
+  ctrl + enter: 生成构造方法
+  command + ; :project structure
+  
+3.设置快捷键
+  IntelliJ IDEA—>Preferences—>Keymap
+4.解决idea最新版本报错
+  objc[694]: Class JavaLaunchHelper is implemented in both /Library/Java/  JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/bin/java (0x10021e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1002aa4e0)
+  Help下点击“Edit Custom Properties”,打开”idea.properties”文件，输入下面的内容
+  idea.no.launcher=true，然后重启idea
+5.配置关联tomcat  1.run —> Edit Configurations 
+                2.点击+,添加Tomcat Server
+                3.配置Name,在Server选项卡配置Application server的tomcat路径，端口号，jdk,启动浏览器
+                4.在Deployment选项卡，点击+ 选则Artifact进行idea 内部工程部署或选择External source 进行外部的部署。
+              
+6.配置web项目
+ 1.project Structure 弹框Modules下Source选项卡的WEB-INF添加classes,lib目录
+ 2.在path路径下选择刚才新建的classes目录，Dependencies选项卡选择idk，并将idk关联lib目录
+
+
+
+                      
