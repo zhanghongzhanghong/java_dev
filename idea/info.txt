@@ -44,6 +44,10 @@
 6.配置web项目
  1.project Structure 弹框Modules下Source选项卡的WEB-INF添加classes,lib目录
  2.在path路径下选择刚才新建的classes目录，Dependencies选项卡选择idk，并将idk关联lib目录
+7.idea关联svn
+  IntelliJ IDEA—>Preferences—>Version Control—>Subversion 勾选Use custom Configuration directory,此时可能会提示下载命令行客户端
+  VCS —->Browse VCS Repository—>Browse Subversion Repository 打开SVN资源窗口
+  VCS —->checkout from version control—>subversion   选择资源位置后，进行checkout
 
 
 
