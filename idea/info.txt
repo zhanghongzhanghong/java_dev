@@ -28,7 +28,8 @@
   f8:跳到一个断点
   Evaluate Expression:command + U
   ctrl + enter: 生成构造方法
-  command + ; :project structure
+  command + ; :打开project structure窗口
+  command + f:在文件内搜索文本
   
 3.设置快捷键
   IntelliJ IDEA—>Preferences—>Keymap
@@ -45,10 +46,20 @@
  1.project Structure 弹框Modules下Source选项卡的WEB-INF添加classes,lib目录
  2.在path路径下选择刚才新建的classes目录，Dependencies选项卡选择idk，并将idk关联lib目录
 7.idea关联svn
-  IntelliJ IDEA—>Preferences—>Version Control—>Subversion 勾选Use custom Configuration directory,此时可能会提示下载命令行客户端
-  VCS —->Browse VCS Repository—>Browse Subversion Repository 打开SVN资源窗口
-  VCS —->checkout from version control—>subversion   选择资源位置后，进行checkout
-
+  1)IntelliJ IDEA—>Preferences—>Version Control—>Subversion 勾选Use custom Configuration directory,此时可能会提示下载命令行客户端
+  2)VCS —->Browse VCS Repository—>Browse Subversion Repository 打开SVN资源窗口
+  3)VCS —->checkout from version control—>subversion   选择资源位置后，进行checkout
+8.idea关联maven
+  1)解压maven 
+  2)open ~/.bash_profile —>输入 export PATH="/Users/maoqiu/apache-maven-3.5.4:$PATH" export PATH="/Users/maoqiu/apache-maven-3.5.4/bin:$PATH" —>source ~/.bash_profile
+  3)IntelliJ IDEA—>Preferences->maven —>选择Plugin update policy为Check For Updates,选择maven home directory和User settings file
+9.新建maven工程
+  project structure—>添加module—>选择maven—>勾选create from archetype(选择webapp)—>填写GroupId,ArtifactId
+10.IDEA的删除需要关闭工程，点击x删除,然后再手动删除文件
+11.自动编译工程，
+   1)command + ,—>Compiler —>勾选Build project automatically
+   2)tomcat server —> on frame deactivation—> hot swap classes
+   
 
 
                       
