@@ -63,7 +63,7 @@
    3)command + ; —> artifacts—>选择带有exploded项目
 12.打包项目
    右侧maven窗口，执行maven package命令
-13查看进程号，并强杀 lost -i:8080;kill -9 进程号
+13查看进程号，并强杀 lsof -i:8080;kill -9 进程号lost -
    
 
 
