@@ -31,6 +31,7 @@
   command + ; :打开project structure窗口
   ctrl + h:在文件内搜索文本
   ctrl + d:debug运行tomcat
+  command + ? :生成xml注释
   
 3.设置快捷键
   IntelliJ IDEA—>Preferences—>Keymap
