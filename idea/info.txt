@@ -33,6 +33,7 @@
   ctrl + d:debug运行tomcat
   command + ? :生成xml注释
   
+  
 3.设置快捷键
   IntelliJ IDEA—>Preferences—>Keymap
 4.解决idea最新版本报错
@@ -64,7 +65,9 @@
    3)command + ; —> artifacts—>选择带有exploded项目
 12.打包项目
    右侧maven窗口，执行maven package命令
-13查看进程号，并强杀 lsof -i:8080;kill -9 进程号lost -
+13查看进程号，并强杀 lsof -i:8080;kill -9 进程号
+14.编写thyme leaf 编译器报错
+   command + ,——> Editor -—>Inspections -—> Thymeleaf 去掉勾选
    
 
 
