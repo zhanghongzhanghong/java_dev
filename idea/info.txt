@@ -68,7 +68,7 @@
 13查看进程号，并强杀 lsof -i:8080;kill -9 进程号
 14.编写thyme leaf 编译器报错
    command + ,——> Editor -—>Inspections -—> Thymeleaf 去掉勾选
-   
+15.配置默认的Preferences,Structure:file--->other settings--->Preferences for New Project/Structure for New Project   
 
 
                       

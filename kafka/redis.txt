@@ -1,0 +1,2 @@
+1.kafka文档
+http://kafka.apache.org/documentation/#uses
