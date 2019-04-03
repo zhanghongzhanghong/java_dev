@@ -63,6 +63,9 @@
   6)mkdir -p 目录  chmod a-w /data && chmod 777 -R  /data/myftp   usermod -d /data myftp
   7)sestatus -b | grep ftp      setsebool -P tftp_home_dir on
   8）service vsftpd restart
+39.linux查找错误日志
+  1)cat -n 文件路径 | grep 查找错误
+  2）cat -n 文件路径 | sed -n '55,65p'
 
 
 
